@@ -14,25 +14,25 @@ Sequence-based visual place recognition algorithms have been proved to be able t
 
 ##### Some matching results of query image and retrieved image
 
-![1](D:\GitHub\Sequence-Based-VPR\pictures\1.jpg)
+![1](.\pictures\1.jpg)
 
-![2](D:\GitHub\Sequence-Based-VPR\pictures\2.jpg)
+![2](.\pictures\2.jpg)
 
-![4](D:\GitHub\Sequence-Based-VPR\pictures\4.jpg)
+![4](.\pictures\4.jpg)
 
-![5](D:\GitHub\Sequence-Based-VPR\pictures\5.jpg)
+![5](.\pictures\5.jpg)
 
-![6](D:\GitHub\Sequence-Based-VPR\pictures\6.jpg)
+![6](.\pictures\6.jpg)
 
-![9](D:\GitHub\Sequence-Based-VPR\pictures\9.jpg)
+![9](.\pictures\9.jpg)
 
-![10](D:\GitHub\Sequence-Based-VPR\pictures\10.jpg)
+![10](.\pictures\10.jpg)
 
-![11](D:\GitHub\Sequence-Based-VPR\pictures\11.jpg)
+![11](.\pictures\11.jpg)
 
-![7](D:\GitHub\Sequence-Based-VPR\pictures\7.jpg)
+![7](.\pictures\7.jpg)
 
-![8](D:\GitHub\Sequence-Based-VPR\pictures\8.jpg)
+![8](.\pictures\8.jpg)
 
 ##### Accuracy comparison with other algorithms
 
