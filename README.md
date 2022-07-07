@@ -8,7 +8,7 @@ Sequence-based visual place recognition algorithms have been proved to be able t
 
 ## Methodology
 
-![fig_1](.\pictures\fig_1.png)
+<img src=".\pictures\fig_1.png" alt="fig_1" style="zoom: 67%;" />
 
 ## Experiment Result
 
