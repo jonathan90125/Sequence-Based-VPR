@@ -1,6 +1,6 @@
 # A Sequence-Based Visual Place Recognition Technique with Segmented Database and Compact Sequence List
 
-This is the repo for the paper "A Sequence-Based Visual Place Recognition Technique with Segmented Database and Compact Sequence List". It contains implementing code and latex paper file in it. 
+This is the repo for the paper "A Sequence-Based Visual Place Recognition Technique with Segmented Database and Compact Sequence List". It contains implementing code and latex file of paper in it. 
 
 ## Abstract
 
@@ -56,6 +56,6 @@ Run frame_retrieval to see sequence matching results, the query and reference se
 
 ## Future work
 
-This paper has been rejected by the IROS 2022. The manipulating tricks  used to simply searching process have been considered as innovative according to the viewers. However, there are still some serious problems, such as the related work is too short, some methods are not illustrated clearly and the experiment is not convincing enough. I will fix these problems first with the help of the reviews' advice. After that I'm considering using some network based descriptors like NetVLAD to replace the HoG descriptors which I am currently using. This could help to improve the accuracy because of the application of neural network which could probably lead to a more accurate and efficient algorithm. 
+This paper has been rejected by the IROS 2022. The manipulating tricks  used to simplify searching process have been considered innovative according to the viewers. However, there are still some serious problems, such as the related work is too short, some methods are not illustrated clearly and the experiment is not convincing enough. I will fix these problems first with the help of the reviews' advice. After that I'm considering using some network based descriptors like NetVLAD to replace the HoG descriptors which I am currently using. This could help to improve the accuracy because of the application of neural network which could probably lead to a more accurate and efficient algorithm. 
 
  
