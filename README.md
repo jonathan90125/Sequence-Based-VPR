@@ -14,27 +14,25 @@ Sequence-based visual place recognition algorithms have been proved to be able t
 
 ##### Some matching results of query image and retrieved image
 
-![1](.\pictures\1.jpg)
+<img src=".\pictures\1.jpg" alt="1" style="zoom:80%;" />
 
-![2](.\pictures\2.jpg)
+<img src=".\pictures\2.jpg" alt="2" style="zoom:80%;" />
 
-![4](.\pictures\4.jpg)
+<img src=".\pictures\4.jpg" alt="4" style="zoom:80%;" />
 
-![5](.\pictures\5.jpg)
+<img src=".\pictures\5.jpg" alt="5" style="zoom:80%;" />
 
+<img src=".\pictures\9.jpg" alt="9" style="zoom:80%;" />
 
+<img src=".\pictures\10.jpg" alt="10" style="zoom:80%;" />
 
-![9](.\pictures\9.jpg)
+<img src=".\pictures\11.jpg" alt="11" style="zoom:80%;" />
 
-![10](.\pictures\10.jpg)
+<img src=".\pictures\7.jpg" alt="7" style="zoom:80%;" />
 
-![11](.\pictures\11.jpg)
+<img src=".\pictures\8.jpg" alt="8" style="zoom:80%;" />
 
-![7](.\pictures\7.jpg)
-
-![8](.\pictures\8.jpg)
-
-![6](.\pictures\6.jpg)
+<img src=".\pictures\6.jpg" alt="6" style="zoom:80%;" />
 
 ##### Accuracy comparison with other algorithms
 
