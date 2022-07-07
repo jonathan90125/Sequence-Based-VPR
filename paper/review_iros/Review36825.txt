@@ -1,0 +1,55 @@
+Reviewer 3 of IROS 2022 submission 2968
+
+Comments to the author
+======================
+
+This paper proposes a new method to reduce the computational time for
+visual place recognition (VPR). This goal is achieved mainly due to 2
+reasons. First, the database is significantly segmented to yield a
+"represent subset". Second, they only considers a subset of query
+sequence for matching. The method demonstrates a comparable accuracy to
+SOTA methods, while its inference time is much faster than CoHoG.
+
+STRENGTHS:
+- The paper addresses a serious issue in VPR, i.e., scalability
+- The proposed idea is interesting. It is reasonable to find and
+discard redundancy in database and query, and spend more
+effort on most "representative" information.
+- The proposed idea is novel
+- Experimental results show a great potential of the proposed idea.
+
+WEAKNESSES:
+- The introduction should be rewritten to make the motivation clearer,
+e.g., why should we reduce the computation time? In this current
+version, I couldn't see a clear motivation of reducing computation time
+for VPR. Could [A] be a good reference for the paper's motivation?
+
+-  The proposed idea is close to [B]. I could see the novelty between
+the paper and [B], but it is nicer if the paper would discuss the
+differences here such that the audience could see the a clear picture
+in the field
+
+- It will be nice if the paper would include the execution time of
+other competitors to Fig 4
+
+MINOR SUGGESTIONS (but it doesn't affect to my decision)
+- I don't think "represent subset" is grammatically correct, how about
+"representative subset"?
+
+- In INTRODUCTION-"Moreover, the CNN’s encoding-time and runtime memory
+are much higher than those required for the handcrafted descriptors".
+It will be nice if there is a citation to support this claim
+
+- Also, "Although the CNN-based VPR techniques have outperformed
+handcrafted descriptor-based techniques currently, their intense
+computational requirement is still a serious problem". It will be nice
+if there is a citation to support this claim
+
+REFERENCES
+[A] Doan, A. D., Latif, Y., Chin, T. J., Liu, Y., Do, T. T., & Reid, I.
+(2019). "Scalable place recognition under appearance change for
+autonomous driving". In ICCV 2019.
+
+[B] Doan, A. D., Latif, Y., Chin, T. J., & Reid, I. "HM^4: Hidden
+Markov Model With Memory Management for Visual Place Recognition. IEEE
+Robotics and Automation Letters 2020.

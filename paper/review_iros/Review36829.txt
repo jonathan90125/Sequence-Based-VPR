@@ -1,0 +1,144 @@
+Reviewer 5 of IROS 2022 submission 2968
+
+Comments to the author
+======================
+
+Summary:
+
+This paper presents a sequence-based VPR technique that has been shown
+to achieve SOTA or comparable performance to other baseline techniques.
+Several improvements are proposed in comparison to an existing baseline
+that uses sequence-based filtering for VPR. I find that these
+improvements are smart tricks and have been shown to be helpful. The
+technique is evaluated on public datasets and compared with many
+different VPR techniques. An ablation on the technique’s parameters is
+performed as well.
+
+Firstly, I appreciate the efforts of authors who have proposed some
+intuitive improvements, but which are over a very specialized set of
+literature in sequence-based VPR. The authors have a thorough
+understanding of the underlying limitations of their baseline and have
+smartly improved on it. 
+
+Nevertheless, in its current form, I find it difficult to recommend
+this work for publication in RA-L + IROS for a number of reasons.  Most
+importantly, without adding sequential information to your baselines,
+it is not a fair comparison, especially when there is no reasoning
+provided for doing so. May be this work would benefit more by showing
+that the proposed smart tricks are agnostic to the underlying VPR
+techniques, but which however is not the story line of this work. The
+literature review is significantly restricted and there are no
+conclusions provided in the paper. The evaluation is limited to very
+small scale datasets, which are not the correct experimental setup for
+the proposed methodology, and many important definitions are missing.
+Some claims are not explained well and are therefore not acceptable as
+is. The paper could benefit significantly from better write-up and
+structuring. Please see below my detailed comments.
+
+Detailed Comments:
+
+Section 1: I would not introduce VPR as just a sub-problem of SLAM. I
+agree that it has applications for loop-closure in SLAM and that this
+was one of the original motivations, but now VPR is a domain in itself
+which has many applications. For example, other than loop closure, VPR
+is useful for candidate retrieval for 3D modelling and is widely used
+there. It is also useful as a primary localization system, where it
+models the coarse stage of coarse-to-fine localization.  I think the
+works of Torsten Sattler et al. could explain this best for you, and I
+note that his very relevant works in image retrieval is not in this
+paper’s literature review.
+
+Page 3 right first para: ‘In this research’, which research yours or
+[18]? I can understand you meant [18] but please specify clearly. This
+comment also extends to other similar statements in the paper.
+
+Page 3 right: Regarding ‘In addition, we also discovered a trend that
+as the image comparison continued the similarity score between initial
+image and current comparing image will descend obviously, but when the
+score suddenly rises comparing to last score, this implies that the
+current image has contained enough new descriptors which can randomly
+generate higher scores. In this case, we also consider enough
+information gain has been achieved.’ I do not understand why this is
+assumed to be obvious and your reasoning behind this. I think you
+should approach this from the angle of visual content overlap, such
+that when there is no real visual content overlap (co-visibility)
+between the first image and latest image, the real visual content
+similarity becomes irrelevant and the similarity score subsequently
+depends on the similar features in the scene rather than the co-visible
+visual content. Please explain this better with some visuals to guide
+the reader regarding this trend/effect that you have discovered.
+
+Your literature review is significantly limited, I would suggest your
+read the works introduced in the detailed survey of ‘Visual place
+recognition: A survey from deep learning perspective’ by Zhang et al
+2021 and the survey of ‘A survey on visual-based localization: On the
+benefit of heterogeneous data’ by Piasco et al. 2018.
+
+What is ‘represent image’? I see that this term is used repeatedly in
+this paper, but I do not fully understand what it represents. May be
+this is a keyframe for a subset of reference images.
+
+Page 4 left: Regarding ‘most similar images through the whole database
+is because two adjacent reference images tend to have similar scores
+even if they are both wrong.’ What does wrong  mean here? Please
+explain better.
+
+Sub-section III-A: You have spent a significant space on explaining an
+already proposed work. This is not useful, please only comprehensively
+explain prior works.
+
+Sub-section III-E: Why is the search time O(1)? The search time for
+maximum element in a simple 1D array of length N is O(N).
+
+Sub-section III-E: I do not understand the last paragraph of this
+section. Why would the reference images follow similar trend of
+information gain as that of the query images, since they can have
+domain shifts (day-nights etc). Can you please explain this.
+
+Sub-section IV-C: What is IOU used for? I failed to understand how IOU
+as explained here is (if at all) related with the methodology and what
+is its purpose.
+
+Figure 3: Is the sequence length on the x-axis applicable for both
+ConvSequential-SLAM and your technique, or only for your work. If it is
+the latter, then please clearly specify what the sequence length is for
+ConvSequential-SLAM.
+
+Section IV: How is ‘accuracy’ defined in your work? Please always
+provide clear definitions for evaluation metrics.
+
+Section IV: It is good that you have an exhaustive comparison with
+different techniques. However, in my opinion it is not completely fair
+to avoid introducing sequential information to your baselines, such as
+NetVLAD etc. If there is a reason why these techniques cannot benefit
+from the same sequential information that your method has access to or
+if they are not suitable to be used in a sequential setting, please
+motivate that. I see that this is also a problem in the original
+evaluations of other sequence-based techniques in literature that you
+have built upon, but you have the chance to improve upon that. I see
+that the SOTA performance of sequence-based deep learning techniques in
+comparison to handcrafted sequence-based techniques has already been
+shown in ‘Sequence-Based Filtering for Visual Route-Based Navigation:
+Analysing the Benefits, Trade-offs and Design Choices’ by Tomita et al.
+
+Section IV: Since you do not add consecutive frames in your query
+sequence for a given sequence length i.e. a query sequence of 5 images
+does not have the 5 consecutive query images, could you show how far
+apart in the query sequence the selected frames are? It is possible
+that a sequence length of 5 is essentially selecting 5 images from a
+sequence of 50 images, where the dataset is itself only of 200 images
+in total.
+
+Section IV: Following up on the previous comment, I think it is more
+useful for this work (that uses sequential information) to show
+evaluations on larger datasets, instead of datasets with a few hundred
+images where a major chunk of the database could be used in a query
+sequence. For example, the Oxford Robot Car dataset is a very useful
+open-source dataset for your work.
+
+It seems that you forgot to have a Conclusions section in your paper.
+It is important to conclude your research and summarize for the reader
+what you have shown him/her. Note that the Conclusions section is not a
+re-wording of the Abstract but needs to reflect on the content shown to
+the reader in all sections. This is also where the authors can identify
+their limitations and future directions.
