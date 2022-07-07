@@ -22,7 +22,7 @@ Sequence-based visual place recognition algorithms have been proved to be able t
 
 ![5](.\pictures\5.jpg)
 
-![6](.\pictures\6.jpg)
+
 
 ![9](.\pictures\9.jpg)
 
@@ -33,6 +33,8 @@ Sequence-based visual place recognition algorithms have been proved to be able t
 ![7](.\pictures\7.jpg)
 
 ![8](.\pictures\8.jpg)
+
+![6](.\pictures\6.jpg)
 
 ##### Accuracy comparison with other algorithms
 
